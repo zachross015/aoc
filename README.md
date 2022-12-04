@@ -1,2 +1,2 @@
-# aoc
-Code Repository for Advent of Code
+# Advent of Code
+My code repository and explanations for the annual Advent of Code.
