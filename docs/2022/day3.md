@@ -9,3 +9,5 @@ character to the integer counterpart. Modern computers store $A = 65$ and $a = 9
 Using this, the transformation from characters to integers is
 \begin{equation}f(x) = \begin{cases} x - 96 & \text{if } x > 96 \\\\ x - 38 & \text{otherwise.} \end{cases}.\end{equation}
 The final solution is just the sum of the integer solutions.
+
+Code available at github.com/zachross015/aoc/2022/day3.py.
