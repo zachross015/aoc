@@ -1,25 +1,12 @@
-# Read Inputs
-with open("inputs/day3") as f:
-    rucksacks = f.read().splitlines()
+from utils import solve_sum_problem, get_input
+
+rucksacks = get_input('day3')
+
 
 def convert(char):
     """ Convert a-Z to the range 1-52 """
     val = ord(char)
     return val - 96 if val > 96 else val - 38
-
-def solve_sum_problem(predict, modify, input):
-    """ Reduces boilerplate pipeline for typical AOC code.
-    
-    Problems typically follow the pipeline of take an input, modify it in some way, use this modification 
-    to predict an outcome. This reduces the boiler plate where the solution involves
-    summing the results.
-
-    @param predict Function who takes the `modify` output and predicts a solution.
-    @param modify  Modifies each entry in `input` via 1-1 mapping.
-    @param input   The pre-processed program input.
-    @return Program solution.
-    """
-    return sum(map(predict, map(modify, input)))
 
 
 # Part 1 #
